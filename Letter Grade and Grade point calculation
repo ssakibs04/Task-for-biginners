@@ -1,0 +1,60 @@
+#include <iostream>
+#include <conio.h>
+using namespace std;
+
+int main()
+{
+    cout<<"Letter Grade\n";
+    cout<<"---------------------\n";
+    cout<<"90-100	A+	   4.00\n 85 - < 90	A	3.75\n 80 - < 85	B+	3.50\n 75 - < 80	B	3.25\n 70 - < 75	C+	3.00\n 65 - < 70	C	2.75\n 60 - < 65	D+	2.50\n 50 - < 60	D	2.25\n < 50	F	0.00" <<endl;
+
+    int mark;
+    cout<<"Enter Your Mark: ";
+    cin>>mark;
+       if(mark>100)
+    {
+    cout<<"Invalid Marks,Please Enter Marks Between 1-100."<<endl;
+    }
+    else if(mark>=90)
+    {
+        cout<<"Your Letter Grade:A+\n"<<"Your Grade Point: 4.00\n"<<"Congratulations"<<endl;
+    }
+    else if(mark>=85)
+    {
+    cout<<"Your Letter Grade:A\n"<<"Your Grade Point: 3.75";
+    }
+
+        else if(mark>=80)
+    {
+    cout<<"Your Letter Grade:B+\n"<<"Your Grade Point: 3.50";
+    }
+
+        else if(mark>=75)
+    {
+    cout<<"Your Letter Grade:B\n"<<"Your Grade Point: 3.25";
+    }
+      else if(mark>=70)
+    {
+    cout<<"Your Letter Grade:C+\n"<<"Your Grade Point: 3.00";
+    }
+      else if(mark>=65)
+    {
+    cout<<"Your Letter Grade:C\n"<<"Your Grade Point: 2.75";
+    }
+      else if(mark>=60)
+    {
+    cout<<"Your Letter Grade:D+\n"<<"Your Grade Point: 2.50";
+    }
+     else if(mark>=50)
+
+    {
+    cout<<"Your Letter Grade:D\n"<<"Your Grade Point: 2.25";
+
+    }
+
+     else {
+        cout<<"Your Letter Grade:F\n"<<"Better Luck Next Time";
+     }
+
+    getch();
+}
